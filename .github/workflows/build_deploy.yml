@@ -9,5 +9,5 @@ jobs:
       build_source: ./
       build_destination: ./_site
       builder: jekyll
-      deploy_to: gh_pages
+      deploy_to: gh-pages
       
