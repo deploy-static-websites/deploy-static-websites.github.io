@@ -12,7 +12,7 @@ jobs:
     with:
       build_source: .
       build_destination: _site
-      sparse_checkout: ''
+      sparse_checkout: 'level1'
       builder: jekyll
       deploy_to: gh-pages
       
