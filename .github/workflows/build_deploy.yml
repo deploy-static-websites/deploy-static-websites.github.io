@@ -6,8 +6,8 @@ jobs:
     name: call the reusable workflow
     uses: deploy-static-websites/workflows/.github/workflows/build_deploy.yml@main
     with:
-      build_source: ./ddd
-      build_destination: ./_site
-      builder: jekyll
+      build_source: ./
+      build_destination: ./_site2
+      builder: jekyllq
       deploy_to: gh_pages
       
