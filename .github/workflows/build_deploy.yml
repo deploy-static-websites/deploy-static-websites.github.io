@@ -8,6 +8,6 @@ jobs:
     with:
       build_source: ./
       build_destination: ./_site
-      builder: jekyllq
-      deploy_to: gh_pages
+      builder: jekyll
+      deploy_to: gh_pagesw
       
