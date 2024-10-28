@@ -1,8 +1,6 @@
 name: build and deploy a static site
 on:
   workflow_dispatch 
-env:
-  build_source: '.'
 jobs:   
   job1: 
     permissions:
@@ -14,7 +12,7 @@ jobs:
     with:
       build_source: ${{env.build_source}}
       build_destination: _site
-      sparse_checkout: ${{env.build_source}}
+      sparse_checkout: true # if true, action/checkout will checkout only build_source
       builder: jekyll
       deploy_to: gh-pages
       
