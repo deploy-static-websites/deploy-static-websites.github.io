@@ -1,6 +1,8 @@
 name: build and deploy a static site
 on:
-  workflow_dispatch
+  workflow_dispatch 
+env:
+  build_source: '.'
 jobs:   
   job1: 
     permissions:
@@ -10,9 +12,9 @@ jobs:
     name: call the reusable workflow
     uses: deploy-static-websites/workflows/.github/workflows/build_deploy.yml@main
     with:
-      build_source: ''
+      build_source: ${{env.build_source}}
       build_destination: _site
-      sparse_checkout: ''
+      sparse_checkout: ${{env.build_source}}
       builder: jekyll
       deploy_to: gh-pages
       
