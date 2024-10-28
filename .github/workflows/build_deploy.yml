@@ -7,7 +7,7 @@ jobs:
     uses: deploy-static-websites/workflows/.github/workflows/build_deploy.yml@main
     with:
       build_source: ./
-      build_destination: ./_site2
+      build_destination: ./_site
       builder: jekyllq
       deploy_to: gh_pages
       
