@@ -1,4 +1,4 @@
-name: build and deploy the static site
+name: build and deploy a static site
 on:
   workflow_dispatch
 jobs:   
